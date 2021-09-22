@@ -1,0 +1,1 @@
+while (True): try: print ("Escriba el número de primos a hallar:") numero = int(input()) break except: print ("¡Eso no es un entero!") cont_primos = 0 es_primo = 2 while (cont_primos < numero): bandera = True for i in range(2, es_primo): if (es_primo % i == 0): # El número NO es primo bandera = False break if (bandera): cont_primos += 1 print (es_primo) es_primo += 1 
